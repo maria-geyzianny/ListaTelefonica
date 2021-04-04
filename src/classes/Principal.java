@@ -1,6 +1,7 @@
-package Classes;
+package classes;
 
-import Telas.viewCadastrar;
+import telas.ViewCadastrar;
+import telas.ViewLista;
 
 public class Principal {
 	
@@ -8,10 +9,11 @@ public class Principal {
 		Pessoa objPessoa = null;
 		
 		//Exibição da tela cadastrar através do Objeto viewCadastrar;
-		viewCadastrar viewCadastrar = new viewCadastrar(objPessoa);
+		ViewCadastrar viewCadastrar = new ViewCadastrar(objPessoa);
 		viewCadastrar.exibirTela();
 		
 		//Exibição da TelaListar;
+		ViewLista viewLista = new viewLista(objPessoa);
 		
 		
 		//Exibição da TelaRemover;

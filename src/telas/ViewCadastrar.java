@@ -1,4 +1,4 @@
-package Telas;
+package telas;
 //Bibliotecas do GUI;
 import java.awt.*;
 import java.awt.event.*;
@@ -6,11 +6,10 @@ import java.util.List;
 
 import javax.swing.*;
 
-import Classes.Pessoa;
-import Classes.Principal;
+import classes.Pessoa;
 
 	//Classe JFrame instância os métodos e atributos de interface grafica;
-	public class viewCadastrar extends JFrame{
+	public class ViewCadastrar extends JFrame{
 		//Atributos 
 		private JLabel LT;
 		private JLabel ID;
@@ -35,7 +34,7 @@ import Classes.Principal;
 		private Pessoa objPessoa;
 		
 		//Construtor 
-		public viewCadastrar(Pessoa objPessoa) {
+		public ViewCadastrar(Pessoa objPessoa) {
 			super("Lista Telefonica");
 			setLayout(null);
 			this.objPessoa = objPessoa;
@@ -67,7 +66,7 @@ import Classes.Principal;
 		public void exibirTela() {
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
 			setSize(800, 600);
-			setVisible(true);	
+			setVisible(true);
 		}
 
 		//Estabelecendo e Definindo o controle das ações da GUI;

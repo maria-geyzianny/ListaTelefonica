@@ -1,6 +1,6 @@
 package classes;
 
-public class Pessoa {
+public class Contato {
 
 	//Atributos pessoais
 	private int ID;
@@ -10,7 +10,7 @@ public class Pessoa {
 	private char sexo;
 		
 	//Construtores para cada atributos
-	public Pessoa(int ID, String nome, String sobrenome, String tellPessoal,
+	public Contato(int ID, String nome, String sobrenome, String tellPessoal,
 				  String tellComercial, String email, char sexo) {
 		this.ID = ID;
 		this.nome = nome;
@@ -79,6 +79,8 @@ public class Pessoa {
 	public void setSexo(char sexo) {
 		this.sexo = sexo;
 	}
+	
+	//Comportamentos;
 	
 	
 }

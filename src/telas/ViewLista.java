@@ -3,18 +3,18 @@ package telas;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import classes.Pessoa;
+import classes.Contato;
 
 public class ViewLista extends JFrame{
 	
 	private JLabel LT;
-	private Pessoa objPessoa;
+	private Contato objContato;
 	
 	
-	public ViewLista(Pessoa objpessoa) {
+	public ViewLista(Contato objpessoa) {
 		super("Lista de Cadastro");
 		setLayout(null);
-		this.objPessoa = objPessoa;
+		this.objPessoa = objContato;
 		
 		this.LT = new JLabel("LISTA TELEFÔNICA");
 		LT.setBounds(350,20,200,20);

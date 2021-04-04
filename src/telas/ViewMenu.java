@@ -8,11 +8,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import telas.ViewCadastro;
-import classes.Pessoa;
+import classes.Contato;
 
 public class ViewMenu extends JFrame {
 	
-	private Pessoa objPessoa;
+	private Contato objContato;
 	
 	private JLabel LT;
 	private Button opcCadastro;
@@ -22,9 +22,9 @@ public class ViewMenu extends JFrame {
 
 	
 	//Construtor
-	public ViewMenu(Pessoa objPessoa) {
+	public ViewMenu(Contato objPessoa) {
 		super("Menu Lista Telefônica");
-		this.objPessoa = objPessoa;
+		this.objContato = objContato;
 		setLayout(null);
 		setVisible(true);
 		
@@ -70,12 +70,12 @@ public class ViewMenu extends JFrame {
 		public void actionPerformed(ActionEvent acao) {
 			
 			if (acao.getSource() == opcCadastro) {
-				ViewCadastro viewCadastro = new ViewCadastro(objPessoa);
+				ViewCadastro viewCadastro = new ViewCadastro(objContato);
 				viewCadastro.exibirTela();
 			}
 			
 			else if (acao.getSource() == opcLista) {
-				ViewLista viewLista = new ViewLista(objPessoa);
+				ViewLista viewLista = new ViewLista(objContato);
 				viewLista.exibirTela();
 			}
 			

@@ -6,7 +6,7 @@ import java.util.List;
 
 import javax.swing.*;
 
-import classes.Pessoa;
+import classes.Contato;
 
 	//Classe JFrame instância os métodos e atributos de interface grafica;
 	public class ViewCadastro extends JFrame{
@@ -31,13 +31,13 @@ import classes.Pessoa;
 		private JButton cadastroButton;
 		private JButton limparButton;
 		
-		private Pessoa objPessoa;
+		private Contato objContato;
 		
 		//Construtor 
-		public ViewCadastro(Pessoa objPessoa) {
+		public ViewCadastro(Contato objContato) {
 			super("Cadastro");
 			setLayout(null);
-			this.objPessoa = objPessoa;
+			this.objContato = objContato;
 			
 			this.LT = new JLabel("LISTA TELEFÔNICA");
 			LT.setBounds(350,20,200,20);
@@ -70,31 +70,31 @@ import classes.Pessoa;
 			add(sobrenomeField);
 			
 			this.tellPessoal = new JLabel("Tel Pessoal: ");
-			tellPessoal.setBounds(200, 300, 100, 40);
+			tellPessoal.setBounds(200, 200, 100, 40);			
 			add(tellPessoal);
 			this.tellPessoalField = new JTextField(null);
-			tellPessoalField.setBounds(285, 310, 265, 20);
+			tellPessoalField.setBounds(285, 210, 265, 20);
 			add(tellPessoalField);
 			
 			this.tellComercial = new JLabel("Tel Comercial: ");
-			tellComercial.setBounds(200, 350, 100, 40);
+			tellComercial.setBounds(200, 250, 100, 40);
 			add(tellComercial);
 			this.tellComercialField = new JTextField(null);
-			tellComercialField.setBounds(285, 360, 265, 20);
+			tellComercialField.setBounds(285, 260, 265, 20);
 			add(tellComercialField);
 			
 			this.email = new JLabel("E-mail: ");
-			email.setBounds(200, 250, 100, 40);
+			email.setBounds(200, 300, 100, 40);
 			add(email);
 			this.emailField = new JTextField(null);
-			emailField.setBounds(250, 260, 300, 20);
+			emailField.setBounds(250, 310, 300, 20);
 			add(emailField);
 			
 			this.sexo = new JLabel("Sexo (M ou F): ");
-			sexo.setBounds(200, 400, 100, 40);
+			sexo.setBounds(200, 350, 100, 40);
 			add(sexo);
 			this.sexoField = new JTextField(null);
-			sexoField.setBounds(285, 410, 265, 20);
+			sexoField.setBounds(285, 360, 265, 20);
 			add(sexoField);
 
 			
@@ -134,6 +134,5 @@ import classes.Pessoa;
 			
 			}
 		}
-		
-		
+			
 }

@@ -3,22 +3,20 @@ package telas;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import classes.Pessoa;
+import classes.Contato;
 
 public class ViewAtualiza extends JFrame {
 
-	private Pessoa objPessoa;
+	private Contato objContato;
 	private JLabel LT;
 
 	
 	public ViewAtualiza() {
 		super("Atualizar Cadastro");
 		setLayout(null);
-		this.objPessoa = objPessoa;
+		this.objContato = objContato;
 		
 		this.LT = new JLabel("LISTA TELEFÔNICA");
-		
-		
 		
 		}
 		

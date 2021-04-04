@@ -5,22 +5,21 @@ import telas.ViewLista;
 import telas.ViewMenu;
 
 public class Principal {
-	
 	public static void main(String[] args) {
-		Pessoa objPessoa = null;
 		
+		Contato objContato = null;
 		
-		ViewMenu viewMenu = new ViewMenu(objPessoa);
+		ViewMenu viewMenu = new ViewMenu(objContato);
 		viewMenu.exibirTela();
 		
 		/*Exibição da tela cadastrar através do Objeto viewCadastrar;
-		ViewCadastro viewCadastrar = new ViewCadastro(objPessoa);
+		ViewCadastro viewCadastrar = new ViewCadastro(objContato);
 		viewCadastrar.exibirTela();
 		*/
 		
 		
 		/*Exibição da TelaListar;
-		ViewLista viewLista = new ViewLista(objPessoa);
+		ViewLista viewLista = new ViewLista(objContato);
 		viewLista.exibirTela();
 		*/
 		

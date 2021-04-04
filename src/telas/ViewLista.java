@@ -7,17 +7,12 @@ import classes.Pessoa;
 
 public class ViewLista extends JFrame{
 	
+	private JLabel LT;
 	private Pessoa objPessoa;
 	
-	public ViewLista() {
-		super("Lista Telefonica");
-		setLayout(null);
-		this.objPessoa = objPessoa;
-		
-	}
 	
-	pulbic viewLista(Pessoa objpessoa) {
-		//super(); NÃO SEI O QUE FAZER AQUI
+	public ViewLista(Pessoa objpessoa) {
+		super("Lista de Cadastro");
 		setLayout(null);
 		this.objPessoa = objPessoa;
 		

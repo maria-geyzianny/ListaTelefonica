@@ -1,20 +1,28 @@
 package classes;
 
-import telas.ViewCadastrar;
+import telas.ViewCadastro;
 import telas.ViewLista;
+import telas.ViewMenu;
 
 public class Principal {
 	
 	public static void main(String[] args) {
 		Pessoa objPessoa = null;
 		
-		//Exibição da tela cadastrar através do Objeto viewCadastrar;
-		ViewCadastrar viewCadastrar = new ViewCadastrar(objPessoa);
+		
+		ViewMenu viewMenu = new ViewMenu(objPessoa);
+		viewMenu.exibirTela();
+		
+		/*Exibição da tela cadastrar através do Objeto viewCadastrar;
+		ViewCadastro viewCadastrar = new ViewCadastro(objPessoa);
 		viewCadastrar.exibirTela();
+		*/
 		
-		//Exibição da TelaListar;
-		ViewLista viewLista = new viewLista(objPessoa);
 		
+		/*Exibição da TelaListar;
+		ViewLista viewLista = new ViewLista(objPessoa);
+		viewLista.exibirTela();
+		*/
 		
 		//Exibição da TelaRemover;
 		

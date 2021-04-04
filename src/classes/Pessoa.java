@@ -20,6 +20,7 @@ public class Pessoa {
 		this.email = email;
 		this.sexo = sexo;
 	}
+	// tirar o ID para auto Incremente é MAIS SEGUROOOOOO
 	
 	
 	//Get's e Set's

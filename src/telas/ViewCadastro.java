@@ -46,6 +46,15 @@ import classes.Pessoa;
 			
 			//Texto (JLabel); Caixa de texto (nomeField);
 			//Linhas 49 a 96
+			
+			/*this.ID = new JLabel("ID: ");
+			ID.setBounds(200, 200, 100, 40);
+			add(ID);
+			this.IDField = new JTextField(null);
+			IDField.setBounds(250, 210, 300, 20);
+			add(IDField);
+			*/
+			
 			this.nome = new JLabel("Nome: ");
 			nome.setBounds(200, 100, 100, 40);
 			add(nome);
@@ -60,20 +69,6 @@ import classes.Pessoa;
 			sobrenomeField.setBounds(285, 160, 265, 20);
 			add(sobrenomeField);
 			
-			this.ID = new JLabel("ID: ");
-			ID.setBounds(200, 200, 100, 40);
-			add(ID);
-			this.IDField = new JTextField(null);
-			IDField.setBounds(250, 210, 300, 20);
-			add(IDField);
-			
-			this.email = new JLabel("E-mail: ");
-			email.setBounds(200, 250, 100, 40);
-			add(email);
-			this.emailField = new JTextField(null);
-			emailField.setBounds(250, 260, 300, 20);
-			add(emailField);
-			
 			this.tellPessoal = new JLabel("Tel Pessoal: ");
 			tellPessoal.setBounds(200, 300, 100, 40);
 			add(tellPessoal);
@@ -87,6 +82,13 @@ import classes.Pessoa;
 			this.tellComercialField = new JTextField(null);
 			tellComercialField.setBounds(285, 360, 265, 20);
 			add(tellComercialField);
+			
+			this.email = new JLabel("E-mail: ");
+			email.setBounds(200, 250, 100, 40);
+			add(email);
+			this.emailField = new JTextField(null);
+			emailField.setBounds(250, 260, 300, 20);
+			add(emailField);
 			
 			this.sexo = new JLabel("Sexo (M ou F): ");
 			sexo.setBounds(200, 400, 100, 40);

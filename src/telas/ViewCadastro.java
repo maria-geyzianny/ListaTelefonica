@@ -35,7 +35,7 @@ import classes.Pessoa;
 		
 		//Construtor 
 		public ViewCadastro(Pessoa objPessoa) {
-			super("Lista Telefonica");
+			super("Cadastro");
 			setLayout(null);
 			this.objPessoa = objPessoa;
 			
